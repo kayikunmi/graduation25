@@ -7,15 +7,14 @@
   <link rel="stylesheet" href="styles.css">
   <script type="text/javascript"
         src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
-    </script>
-    <script type="text/javascript">
+  </script>
+  <script type="text/javascript">
     (function(){
         emailjs.init({
             publicKey: "32dAzdUyWJTlTl12f",
         });
     })();
-    </script>
-    
+  </script>
 </head>
 <body>
   <div class="container">
@@ -29,25 +28,42 @@
       <p><strong>Time:</strong> 10 AM</p>
       <p><strong>Location:</strong> Johnson Chapel, Amherst, MA 01002</p>
     </section>
-    <section class="rsvp">
-      <h2>RSVP</h2>
-      <form id="rsvp-form">
-        <label for="name">Your Name:</label>
-        <input type="text" id="name" name="name" required>
 
-        <label for="email">Your Email:</label>
-        <input type="email" id="email" name="email" required>
-
-        <label for="attending">Will you be attending?</label>
-        <select id="attending" name="attending" required>
-          <option value="Yes">Yes</option>
-          <option value="No">No</option>
-        </select>
-
-        <button type="submit">Submit</button>
-      </form>
-      <p id="response-message"></p>
+    <section class="links">
+      <h2>Helpful Links</h2>
+      <ul>
+        <li><a href="https://www.amherst.edu/news/events/commencement" target="_blank">Commencement Information</a></li>
+        <li><a href="https://map.concept3d.com/?id=750#!ct/11132?s/" target="_blank">Campus Maps</a></li>
+        <li><a href="https://www.amherst.edu/visiting/lodging" target="_blank">Local Lodgings</a></li>
+        <li><a href="https://www.amherst.edu/news/events/commencement/visitors" target="_blank">Local Activities for Visitors</a></li>
+        <li><a href="https://www.amherst.edu/news/events/commencement/general-information" target="_blank">General Information</a></li>
+      </ul>
     </section>
+
+    <section class="rsvp">
+        <h2>RSVP</h2>
+        <form id="rsvp-form">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email" required>
+      
+            <label for="attending">Will you be attending?</label>
+            <select id="attending" name="attending" required>
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+            </select>
+      
+            <label for="comments">Additional Information/Questions:</label>
+            <textarea id="comments" name="comments" rows="4" placeholder="Enter any comments or questions here..."></textarea>
+      
+            <br></br>
+            <button type="submit">Submit</button>
+        </form>
+        <p id="response-message"></p>
+      </section>
+      
   </div>
   <script src="script.js"></script>
 </body>
