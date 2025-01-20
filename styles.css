@@ -147,3 +147,13 @@ button:hover {
         padding: 8px;
     }
 }
+.details p a {
+    color: inherit; 
+    text-decoration: none; 
+    font-size: inherit; 
+    font-weight: inherit; 
+}
+
+.details p a:hover {
+    text-decoration: underline; 
+}
